@@ -34,7 +34,7 @@ int main(){
 	int n;
 	cin>>n;
 	int a[n];
-	for(int i=0;i<5;i++){
+	for(int i=0;i<n;i++){
 		cin>>a[i];
 		if(isprime(a[i]))
 			cout<<a[i]<<" ";
