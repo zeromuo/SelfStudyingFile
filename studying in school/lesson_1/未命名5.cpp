@@ -1,0 +1,76 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int a,b,c,tmp1,tmp2;
+	cin>>a>>b>>c;
+	if(a>b){
+		if(a>c){
+			if(b>c){
+				tmp1=a;
+				a=c;
+				b=b;
+				c=tmp1;
+			}
+		}
+		if(a>c){
+			if(b<c){
+				tmp1=a;
+				a=b;
+				b=c;
+				c=tmp1;
+			}
+		}
+		if(a<c){
+			if(b>c){
+				tmp1=b;
+				a=a;
+				b=c;
+				c=tmp1;
+			}
+		}
+		if(a<c){
+			if(b<c){
+				a=a;
+				b=b;
+				c=c;
+			}
+		}
+	
+	if(a<b){
+		if(a>c){
+			if(b>c){
+				tmp1=a;
+				tmp2=b;
+				a=c;
+				b=tmp1;
+				c=tmp2;
+			}
+		}
+		if(a>c){
+			if(b<c){
+				tmp1=a;
+				tmp2=b;
+				a=c;
+				b=tmp1;
+				c=tmp2;
+			}
+	}
+		if(a<c){
+			if(b>c){
+				tmp1=b;
+				a=a;
+				b=c;
+				c=tmp1;
+			}
+		if(a<c){
+			if(b<c){
+				a=a;
+				b=b;
+				c=c;
+			}
+		}
+		}
+		}
+	}
+	cout<<c<<" "<<b<<" "<<a;
+}
