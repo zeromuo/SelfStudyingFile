@@ -31,13 +31,12 @@ bool isprime(int a){
 			return true;
 }
 int main(){
-	int n;
+	int n,a;
 	cin>>n;
-	int a[n];
 	for(int i=0;i<n;i++){
-		cin>>a[i];
-		if(isprime(a[i]))
-			cout<<a[i]<<" ";
+		cin>>a;
+		if(isprime(a))
+			cout<<a<<" ";
 	}
 	
 }
